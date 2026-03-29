@@ -6,19 +6,36 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+  theme = "ashes",
+  theme_toggle = { "ashes", "one_light" },
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  hl_override = {
+    Comment = { italic = true },
+    ["@comment"] = { italic = true },
+  },
+
+  hl_add = {
+    NvimTreeOpenedFolderName = { fg = "green", bold = true },
+  },
 }
 
--- M.nvdash = { load_on_startup = true }
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
--- }
+M.mason = {
+  pkgs = {
+    -- lsp servers
+    "lua-language-server",
+    "html-lsp",
+    "css-lsp",
+    "typescript-language-server",
+    "clangd",
+    "rust-analyzer",
+    "basedpyright",
+    -- formatters
+    "stylua",
+    "deno",
+    "prettier",
+    "clang-format",
+    "black",
+  },
+}
 
 return M
