@@ -15,6 +15,8 @@ map("n", "<C-l>", "<C-W>l", { desc = "move to right window" })
 map("n", "<leader>t", "<cmd>Outline<CR>", { desc = "toggle outline" })
 map("n", "<leader><CR>", "<cmd>nohl<CR>", { desc = "clear highlights" })
 map("n", "<leader>te", "<cmd>Telescope<CR>", { desc = "open telescope" })
+map("n", "<leader>rr", "<cmd>Telescope oldfiles<CR>", { desc = "recent files" })
+map("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "open lazygit" })
 map("v", ">", ">gv", { desc = "indent and reselect" })
 
 -- LSP navigation

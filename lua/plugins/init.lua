@@ -130,6 +130,12 @@ return {
   },
 
   {
+    "kdheepak/lazygit.nvim",
+    cmd = "LazyGit",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
+  {
     "hedyhli/outline.nvim",
     lazy = false,
     config = function()
